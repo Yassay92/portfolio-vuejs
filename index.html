@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio personnel - Présentation et projets">
+  <meta name="author" content="Yacine Frikh">
+  <meta name="keywords" content="portfolio, développement web, Vue.js, projets">
+  <title>Portfolio - YACINE FRIKH</title>
+  <!-- Lien vers le fichier CSS (chemin adapté pour Vite) -->
+  <link rel="stylesheet" href="/porfolio/src/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Mon Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section À propos -->
+    <section id="about">
+      <div class="container">
+        <h2>À propos</h2>
+        <p>Bonjour, je suis <strong>YACINE FRIKH</strong>, Je suis en pleine évolution pour devenir développeur web, un métier qui m’attire profondément et me passionne. Ce domaine me permet d’explorer ma créativité tout en résolvant des problèmes concrets grâce aux technologies modernes.
+
+          Chaque projet que je réalise est une opportunité d’apprendre et de repousser mes limites, que ce soit dans la conception de sites web interactifs, l’optimisation d’interfaces utilisateurs ou la mise en œuvre de solutions techniques innovantes.
+          
+          Je suis motivé par l’idée de créer des outils et des plateformes qui apportent une vraie valeur ajoutée, que ce soit pour des entreprises, des communautés ou des utilisateurs individuels. En m’engageant pleinement dans ce parcours, je suis déterminé à devenir un développeur compétent et à contribuer à des projets ambitieux dans un secteur en constante évolution.</p>
+      </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects">
+      <div class="container">
+        <h2>Mes Projets</h2>
+        <div class="project-grid">
+          <div class="project">
+            <img src="/porfolio/src/assets/images/project1.jpg" alt="Aperçu du projet 1 : une application web.">
+            <h3>Projet 1</h3>
+            <p>Une courte description du projet.</p>
+          </div>
+          <div class="project">
+            <img src="/porfolio/src/assets/images/project2.jpg" alt="Aperçu du projet 2 : une plateforme en ligne.">
+            <h3>Projet 2</h3>
+            <p>Une courte description du projet.</p>
+          </div>
+          <div class="project">
+            <img src="/porfolio/src/assets/images/project3.jpg" alt="Aperçu du projet 3 : un portfolio interactif.">
+            <h3>Projet 3</h3>
+            <p>Une courte description du projet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contactez-moi</h2>
+        <form action="/send-email" method="POST">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Yacine Frikh. Tous droits réservés.</p>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal pour Vite -->
+  <script type="module" src="./porfolio/src/main.js"></script>
+</body>
+</html>
